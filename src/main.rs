@@ -39,28 +39,59 @@
 //     }
 // }
 
-fn main() {
-    struct Book {
-        title: String,
-        author: String,
-        pages: u32,
-        available: bool,
-    }
+// fn main() {
+//     struct Book {
+//         title: String,
+//         author: String,
+//         pages: u32,
+//         available: bool,
+//     }
 
-    struct User {
-        active: bool,
-        username: String,
-        email: String,
-        sign_in_count: u64,
-    }
+//     struct User {
+//         active: bool,
+//         username: String,
+//         email: String,
+//         sign_in_count: u64,
+//     }
 
-    let mut   user1: User = User { 
-        active: true, 
-        username: String::from("ademola Kehinde"), 
-        email:String::from("email@mail.com"), 
-        sign_in_count: 1 ,
-    };
+//     let mut   user1: User = User {
+//         active: true,
+//         username: String::from("ademola Kehinde"),
+//         email:String::from("email@mail.com"),
+//         sign_in_count: 1 ,
+//     };
 
-    user1.email = String::from("newmail@mail.com");
-    println!("user email is {}",user1.email );
-}
+//     user1.email = String::from("newmail@mail.com");
+//     println!("user email is {}",user1.email );
+// }
+
+// using the enum
+// fn main() {
+//     enum IpAddr {
+//         V4(String),
+//         V6(String),
+//     }
+
+//     let home:IpAddr = IpAddr::V4(String::from("127.0.0.1"));
+// }
+
+
+// error handling techniques
+// fn main() {
+//     #[derive(Debug)]
+
+//     // approach 1
+//     enum Option<T> {
+//         Some(T),
+//         None,
+//     }
+
+//     // approach 2
+//     enum Result<T, E> {
+//         Ok(T),
+//         Err(E),
+//     }
+// }
+
+
+
