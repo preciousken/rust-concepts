@@ -1,15 +1,18 @@
 fn main() {
-    let account: BankAccount = BankAccount{
+    let mut account: BankAccount = BankAccount{
         owner:"Precious".to_string(),
         balance:1000.00
     };
 
     // immutable borrow to check the balance
+    account.check_balance();
+    account.withdraw(50.75);
+    account.check_balance();
 }
 
 struct BankAccount {
     owner: String,
-    balance: f64,
+    balance:f64,
 }
 
 impl BankAccount {
